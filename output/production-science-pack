@@ -1,0 +1,23 @@
+// production-science-pack Dependency Ratios
+digraph {
+	"electric-furnace" -> "production-science-pack" [label=1.400]
+	"productivity-module" -> "production-science-pack" [label=0.467]
+	rail -> "production-science-pack" [label=420.000]
+	"steel-plate" -> "electric-furnace" [label=3.125]
+	"advanced-circuit" -> "electric-furnace" [label=4.167]
+	"stone-brick" -> "electric-furnace" [label=15.625]
+	"advanced-circuit" -> "productivity-module" [label=12.500]
+	"electronic-circuit" -> "productivity-module" [label=150.000]
+	stone -> rail [label=1.000]
+	"iron-stick" -> rail [label=0.500]
+	"steel-plate" -> rail [label=0.016]
+	"iron-plate" -> "steel-plate" [label=5.000]
+	"electronic-circuit" -> "advanced-circuit" [label=24.000]
+	"plastic-bar" -> "advanced-circuit" [label=2.000]
+	"copper-cable" -> "advanced-circuit" [label=48.000]
+	stone -> "stone-brick" [label=2.000]
+	"iron-plate" -> "electronic-circuit" [label=1.000]
+	"copper-cable" -> "electronic-circuit" [label=3.000]
+	"iron-plate" -> "iron-stick" [label=1.000]
+	"copper-plate" -> "copper-cable" [label=1.000]
+}
