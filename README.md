@@ -1,12 +1,11 @@
-# React + Vite
+# Factorio modular designer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project creates diagrams of the number of items and machines required to make certain products in factorio. This should make it easier to create blueprints for certain products, make builds more modular.
 
-Currently, two official plugins are available:
+So far my work is in the factorio_modular_designer.ipynb file. It creates png files in the output directory. The png files displays the item icons as well as the number of items per second and machines rquired. They also shows downstream how those items should be directed, the arrows between items show the ratio of input to output machines and how many items go towards a certain product.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+There are constants at the top of the file to change the speeds if using different assemblers or furnaces. You can also change the product by changing the code in the last block.
 
-## Expanding the ESLint configuration
+This project is rough and doesn't have a great user experience (I'm mainly building this for myself right now since I didn't find a tool that did what I wanted). If you are interested in using this as a tool, I'd be happy to create a more accessible notebook in colab, just contact me at bhedelius@gmail.com.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+The notes.txt file is a list of things I want to work on next to improve this and things I want to remember
