@@ -1,15 +1,3 @@
-Would be nice to clean up the dot files
-Would be nice to directly use the factorio files instead of local copies
-- On Windows 11, Factorio's app data is stored in Program Files (x8)\Steam\steamapps\common\Factorio
-- Recipes are in Factorio\data\base\prototypes\recipe.lua
-- Mining (need to add) is in Factorio\data\base\prototypes\entity\resources.lua
-- Icon files are in Factorio\data\base\graphics
-
-I've done some cropping to get the highest res icon, which are stored in data/icons-cropped. Graphviz's HTML tables do not support CSS clipping so the icons will need to be cropped before hand. Should put them in a tmp directory
-
 Eventually it would be nice to have this as an app, being able to add modules, change the machine.
-Would like to update the node images to match factoriocheatsheet soon, the way data is displayed isn't good: https://factoriocheatsheet.com/#common-ratios
-
-Need to add that chemical processing stuff back in soon, would be good to have. Everything has a specific path except where to get the heavy oil, light oil, or petroleum gas so maybe that should be considered a raw ingredient, stick to a specific recipe path, or make a configurable
-Data structures are currently weak. WOuld be nice to represent Factorio's DAG in a more universal way.
-Some of the icons don't match up. Fision reactor, fluids, etc.
+Shadow effect on icons is actually a halo, lightening instead of darkening unfortunately.
+The code is a bit spaghetti, need to organize and start moving things out of ipynb and into modules.

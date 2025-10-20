@@ -1,7 +1,4 @@
 ipykernel
-slpp
 graphviz
-networkx
-pyvis
-jinja2
-matplotlib
+slpp
+pillow
