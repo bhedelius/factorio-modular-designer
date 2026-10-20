@@ -35,7 +35,11 @@ Outside Colab the form fields are plain variables at the top of each cell. The c
 
 ## Data
 
-All game data comes from [FactorioLab](https://github.com/factoriolab/factoriolab)'s published datasets: one JSON file per game version with items, recipes and their producers, machine speeds, module slots, power use, and module effects, plus a sprite sheet of icons. The icons are Factorio's own artwork and belong to Wube Software. Nothing about the game is hardcoded in the notebook, so a new game version or the Space Age expansion is a dataset switch. The Setup cell prints the game version the dataset was built from.
+All game data comes from [FactorioLab](https://github.com/factoriolab/factoriolab)'s published datasets: one JSON file per game version with items, recipes and their producers, machine speeds, module slots, power use, and module effects, plus a sprite sheet of icons. Nothing about the game is hardcoded in the notebook, so a new game version or the Space Age expansion is a dataset switch. The Setup cell prints the game version the dataset was built from.
+
+## License
+
+The notebook and this documentation are released under the MIT license in `LICENSE`. That license covers only this project's own code and text. FactorioLab's data is MIT licensed by its authors. The icons loaded at runtime and the ones visible in the example images are Factorio's own artwork and belong to Wube Software; they are not covered by this license.
 
 ## Limitations
 
