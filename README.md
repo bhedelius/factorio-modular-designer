@@ -6,7 +6,7 @@ Diagrams of the items per second and machines required to make a product in Fact
 
 ![Chemical science pack production graph](examples/chemical-science-pack.png)
 
-Each node shows the product on top of the machine that makes it. The number in the top right is the production rate in items per second and the number in the bottom right is how many machines are needed. Items declared as raw materials are drawn without a machine, since they are supplied from outside the module. Each arrow is labeled with the items per second flowing from an ingredient to the product that consumes it.
+Each node shows the product on top of the machine that makes it. The number in the top right is the production rate in items per second and the number in the bottom right is how many machines are needed. Items declared as raw materials are drawn without a machine, since they are supplied from outside the module. When an ingredient feeds more than one product, each arrow is labeled with the items per second flowing along it. An ingredient with a single consumer leaves the arrow unlabeled, since its icon already shows that rate.
 
 ![Electronic circuit production graph](examples/electronic-circuit.png)
 
@@ -18,7 +18,7 @@ The whole tool is the notebook `factorio_modular_designer.ipynb`, laid out as tw
 2. Fill in **Design** and run it: product, items per second, assembler and furnace tiers, modules, and an option to draw every science pack at once. The diagram appears under the cell and is saved to `output/`.
 3. Raw materials are chosen in a searchable picker under the Design cell. Type to search, press Enter to add, click a tag to remove, and the diagram redraws on each change.
 
-Modules fill every slot of each machine. Productivity modules are only applied to recipes the game allows them on, using the `allow_productivity` flag in the recipe data; other recipes run without modules.
+Two module dropdowns cover mixed loadouts: the secondary module takes its count of slots in each machine and the primary module fills the rest, so "productivity 3 primary, speed 3 secondary, count 1" means three productivity and one speed module in an assembling machine 3. Productivity modules are only applied to recipes the game allows them on, using the `allow_productivity` flag in the recipe data; those slots stay empty elsewhere.
 
 To run it locally instead:
 

@@ -1,6 +1,5 @@
 ipykernel
 ipywidgets
 graphviz
-matplotlib
 slpp
 pillow>=10.1
