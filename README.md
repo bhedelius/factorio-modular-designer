@@ -2,7 +2,7 @@
 
 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/bhedelius/factorio-blueprint-planner/blob/main/factorio_blueprint_planner.ipynb)
 
-Diagrams of the items per second and machines required to make a product in Factorio, so that builds can be planned as self-contained modules.
+Diagrams of the ingredients, machines, and rates needed to make any Factorio product, so builds can be planned as self-contained modules.
 
 ![Chemical science pack production graph](examples/chemical-science-pack.png)
 
@@ -40,7 +40,7 @@ All game data comes from [FactorioLab](https://github.com/factoriolab/factoriola
 ## Limitations
 
 - Beacons, quality, and mining productivity research are not modeled.
-- Recipes are chosen per item, not balanced: picking advanced oil processing for petroleum gas shows the heavy and light oil as leftovers rather than cracking them. A recipe that needs its own product, like asteroid reprocessing, is cut and the item supplied from outside, with a note under the diagram.
+- Recipes are chosen per item, not balanced: picking advanced oil processing for petroleum gas shows the heavy and light oil as leftovers rather than cracking them, and a byproduct the chain could reuse, like the hot fluoroketone returned by cryogenic science, is shown as a leftover rather than fed back. A recipe that needs its own product, like asteroid reprocessing, is cut and the item supplied from outside, with a note under the diagram.
 - One module loadout applies to every machine.
 - Machine counts are shown unrounded so you can choose how to round them.
 
