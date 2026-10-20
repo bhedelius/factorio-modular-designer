@@ -44,4 +44,4 @@ All game data comes from [FactorioLab](https://github.com/factoriolab/factoriola
 - One module loadout applies to every machine.
 - Machine counts are shown unrounded so you can choose how to round them.
 
-The `blueprints/` directory holds Factorio blueprint strings for builds designed from these diagrams. `notes.txt` is a running list of planned work.
+The `blueprints/` directory holds Factorio blueprint strings for builds designed from these diagrams.
