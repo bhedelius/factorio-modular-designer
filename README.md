@@ -43,5 +43,3 @@ All game data comes from [FactorioLab](https://github.com/factoriolab/factoriola
 - Recipes are chosen per item, not balanced: picking advanced oil processing for petroleum gas shows the heavy and light oil as leftovers rather than cracking them, and a byproduct the chain could reuse, like the hot fluoroketone returned by cryogenic science, is shown as a leftover rather than fed back. A recipe that needs its own product, like asteroid reprocessing, is cut and the item supplied from outside, with a note under the diagram.
 - One module loadout applies to every machine.
 - Machine counts are shown unrounded so you can choose how to round them.
-
-The `blueprints/` directory holds Factorio blueprint strings for builds designed from these diagrams.
