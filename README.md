@@ -12,14 +12,16 @@ Each node shows the product on top of the machine that makes it. The number in t
 
 ## Usage
 
-The whole tool is the notebook `factorio_modular_designer.ipynb`. Open it in Colab with the badge above, or run it locally:
+The whole tool is the notebook `factorio_modular_designer.ipynb`. Open it in Colab with the badge above, fill in the **Settings** form (product, rate, assembler and furnace tiers, raw materials), and choose Runtime > Run all. The diagram appears inline and is saved under `output/`. The optional last cell draws every science pack with the same settings.
+
+To run it locally instead:
 
 ```bash
 python -m venv .venv && .venv/bin/pip install -r requirements.txt
 brew install graphviz   # or apt install graphviz; the dot binary is required
 ```
 
-Run the cells top to bottom. The `Configs` cell is where you pick the assembler and furnace tiers, the Factorio version, and the output directory. The last cell lists the products to draw, the target rate, and the set of raw materials; edit it to draw your own. Images are written to `output/`.
+Outside Colab the form cells are plain code, so edit the variables at the top of the Settings cell. The code in every cell is hidden in Colab behind the "Show code" toggle.
 
 Recipe data is read from the [factorio-data](https://github.com/wube/factorio-data) repository at the pinned version and icons from [icons-factorio](https://github.com/deniszholob/icons-factorio), so nothing from the game needs to be installed.
 
