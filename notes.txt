@@ -1,2 +1,3 @@
-Eventually it would be nice to have this as an app, being able to add modules, change the machine.
 Keep everything in the notebook unless it gets too complex; only then move pieces out into modules.
+Close recipe loops (oil cracking, hot fluoroketone back into cooling) with a small linear solve instead of the one-pass walk.
+Eventually it would be nice to have this as a hosted app instead of a notebook.
