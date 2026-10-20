@@ -1,3 +1,2 @@
 Eventually it would be nice to have this as an app, being able to add modules, change the machine.
-Shadow effect on icons is actually a halo, lightening instead of darkening unfortunately.
-The code is a bit spaghetti, need to organize and start moving things out of ipynb and into modules.
+Keep everything in the notebook unless it gets too complex; only then move pieces out into modules.
