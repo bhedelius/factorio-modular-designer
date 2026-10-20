@@ -19,7 +19,7 @@ Recipes with several outputs work too. Outputs that nothing in the diagram consu
 The whole tool is the notebook `factorio_modular_designer.ipynb`, laid out as two form cells. Open it in Colab with the badge above:
 
 1. Run **Setup** once. It picks the dataset, `2.0` for the base game or `spa` for Space Age, and loads recipes, machines, modules, and icons.
-2. Fill in **Design** and run it: product, items per second, an option to draw every science pack, preferred machines, and modules. The diagram appears under the cell and is saved to `output/`.
+2. Fill in **Design** and run it: product, items per second, preferred machines, and modules. Everything is named as in the game, so type "Chemical science pack" rather than an internal id. Picking "All science packs" as the product draws every science pack instead. The diagram appears under the cell and is saved to `output/`.
 3. Under the Design cell, raw materials are chosen in a searchable picker, and any item in the diagram with more than one recipe gets a dropdown. The diagram redraws on each change.
 
 Machines are chosen per recipe from a comma-separated preference list, defaulting to the dataset's upgraded preset (electric mining drill, electric furnace, assembling machine 3). A recipe that none of the preferred machines can run uses its most advanced producer. Two module dropdowns cover mixed loadouts: the secondary module takes its count of slots in each machine and the primary module fills the rest. Productivity modules are only applied where the game allows them, and machines with built-in productivity such as the foundry include it.
