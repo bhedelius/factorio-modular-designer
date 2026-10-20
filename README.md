@@ -1,6 +1,6 @@
-# Factorio modular designer
+# Factorio blueprint planner
 
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/bhedelius/factorio-modular-designer/blob/main/factorio_modular_designer.ipynb)
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/bhedelius/factorio-blueprint-planner/blob/main/factorio_blueprint_planner.ipynb)
 
 Diagrams of the items per second and machines required to make a product in Factorio, so that builds can be planned as self-contained modules.
 
@@ -16,7 +16,7 @@ Recipes with several outputs work too. Outputs that nothing in the diagram consu
 
 ## Usage
 
-The whole tool is the notebook `factorio_modular_designer.ipynb`, laid out as two form cells. Open it in Colab with the badge above:
+The whole tool is the notebook `factorio_blueprint_planner.ipynb`, laid out as two form cells. Open it in Colab with the badge above:
 
 1. Run **Setup** once. It picks the dataset, `2.0` for the base game or `spa` for Space Age, and loads recipes, machines, modules, and icons.
 2. Fill in **Design** and run it: product, items per second, and modules. Everything is named as in the game, so type "Chemical science pack" rather than an internal id. Picking "All science packs" as the product draws every science pack instead. The diagram appears under the cell and is saved to `output/`.
